@@ -52,11 +52,10 @@ public class ManipulaNumeros {
 
     private static void somaImparesMultiplicaPares() {
         for( x=1; x<=30; x++ ){
-            if(x%2!==0){
-               System.out.println("soma Impar",y+=x);
-               System.out.println("Pares",x+=(x/x));
-               System.out.println("Multiplicação",y*=x);
-            }
+            if(x%2==0){
+               y*=x;
+            else(y+=x);
+          
         }
         
     }
