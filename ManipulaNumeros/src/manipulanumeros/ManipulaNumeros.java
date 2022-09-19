@@ -14,6 +14,7 @@ public class ManipulaNumeros {
         System.out.println("Menu de Operação com números");
         System.out.println("1-Maior de 2 números");
         System.out.println("2- Ordenar valores em ordem decrescente");
+        System.out.println("3- Soma impares multiplica pares");
         
         System.out.println("0 - Sair");
         System.out.println("Selecione a opção pretendida");
@@ -28,10 +29,9 @@ public class ManipulaNumeros {
              do{   
                  le1valor("Insira um valor");
              }while (x<=0);
-                NumeroDecrescente.ordenaDecrescente(x);
-            
-                break;                      
-                
+                NumeroDecrescente.ordenaDecrescente(x);                
+               break;              
+            case 3: somaImparesMultiplicaPares(); break;             
             default: System.out.println("Insira opção válida");
                 
         }
@@ -42,13 +42,22 @@ public class ManipulaNumeros {
         System.out.println(s1);
         x = ler.nextInt();
         System.out.println(s2);
-        y = ler.nextInt();
-        
+        y = ler.nextInt();        
     }
 
     private static void le1valor(String s1) {
         System.out.println(s1);
-        x = ler.nextInt();
+        x = ler.nextInt();       
+    }
+
+    private static void somaImparesMultiplicaPares() {
+        for( x=1; x<=30; x++ ){
+            if(x%2!==0){
+               System.out.println("soma Impar",y+=x);
+               System.out.println("Pares",x+=(x/x));
+               System.out.println("Multiplicação",y*=x);
+            }
+        }
         
     }
     
