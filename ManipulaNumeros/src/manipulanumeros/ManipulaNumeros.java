@@ -15,6 +15,8 @@ public class ManipulaNumeros {
         System.out.println("1-Maior de 2 números");
         System.out.println("2- Ordenar valores em ordem decrescente");
         System.out.println("3- Soma impares multiplica pares");
+        System.out.println("4- Troca valores entre variáveis");
+        System.out.println("5- Compara Números");
         
         System.out.println("0 - Sair");
         System.out.println("Selecione a opção pretendida");
@@ -31,7 +33,14 @@ public class ManipulaNumeros {
              }while (x<=0);
                 NumeroDecrescente.ordenaDecrescente(x);                
                break;              
-            case 3: somaImparesMultiplicaPares(); break;             
+            case 3: somaImparesMultiplicaPares(); break;
+            case 4:
+                leValores("Insira um valor","Insira outro valores");
+                TrocaNumero.trocaValoresEntreVariaveis(x,y);break;
+            case 5:
+                leValores("Insira um valor", "Insira outro valor");
+                ComparaNumero.comparar2Valores(x,y);
+                break;
             default: System.out.println("Insira opção válida");
                 
         }
@@ -50,14 +59,30 @@ public class ManipulaNumeros {
         x = ler.nextInt();       
     }
 
-    private static void somaImparesMultiplicaPares() {
-        for( x=1; x<=30; x++ ){
-            if(x%2==0){
-               y*=x;
-            else(y+=x);
-          
+private static void somaImparesMultiplicaPares() {
+        int i = 0;
+        long par = 0;
+        int impar = 0;
+        
+                
+        for ( i = 0; i < 30; i++ ){
+            if (i%2 == 0){
+                if (i>2){
+                par = par*i;
+                }
+            else{
+            par = i;
+            }
         }
         
-    }
-    
+        else{
+                impar = impar+i;
+                }
+        
+        }
+        System.out.println("O valor da soma dos números impares é "+impar);
+        System.out.println("A multiplicação dos valores pares é "+ par);
+        }
+          
 }
+      
