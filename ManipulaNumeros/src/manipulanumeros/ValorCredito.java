@@ -1,13 +1,25 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package manipulanumeros;
 
-/**
- *
- * @author ilisboa
- */
+
 class ValorCredito {
+
+    static void calculaSaldoMédio() {
+    int s_m;
+    s_m = ManipulaNumeros.ler.nextInt();
+     System.out.println("Insira o saldo médio do último ano");   
+      switch(s_m){
+          case 1:
+            System.out.println("Nenhum Crédito"+s_m);
+          case 2:
+            System.out.println("Crédito de 20% do saldo médio"+s_m);
+          case 3:
+            System.out.println("Crédito de 30% do saldo médio"+s_m);
+          case 4:
+            System.out.println("Crédito de 40% do saldo médio"+s_m);
+                      
+          
+      }
+    }
     
 }

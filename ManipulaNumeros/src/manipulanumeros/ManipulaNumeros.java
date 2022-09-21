@@ -19,6 +19,7 @@ public class ManipulaNumeros {
         System.out.println("5- Compara Números");
         System.out.println("6- Calcula média do aluno");
         System.out.println("7- Calcular custo do carro");
+        System.out.println("8- Saldo médio e valor do crédito");
         
         System.out.println("0 - Sair");
         System.out.println("Selecione a opção pretendida");
@@ -49,6 +50,8 @@ public class ManipulaNumeros {
             case 7: 
                 Carro.calculaValorFinal();
                 break;
+            case 8:
+                ValorCredito.calculaSaldoMédio();
             default: System.out.println("Insira opção válida");
                 
         }
